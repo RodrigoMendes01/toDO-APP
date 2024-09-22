@@ -30,7 +30,7 @@
 		"build": "npx prisma generate && next build",
 		"postinstall": "prisma generate",
 		"start": "next start",
-		"lint": "npx @biomejs/biome check --write --unsafe ./src",
+		"lint": "npx @biomejs/biome check --write --unsafe ./src"
 	},
 	"dependencies": {
 		"@hookform/resolvers": "^3.9.0",
