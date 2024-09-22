@@ -28,11 +28,9 @@
 	"scripts": {
 		"dev": "next dev",
 		"build": "npx prisma generate && next build",
-		"postinstall": "npx prisma generate && npx prisma db push",
+		"postinstall": "prisma generate",
 		"start": "next start",
 		"lint": "npx @biomejs/biome check --write --unsafe ./src",
-		"json-server": "json-server --watch data/tasks.json --port 3333",
-		"serve": "node api/index.js"
 	},
 	"dependencies": {
 		"@hookform/resolvers": "^3.9.0",
