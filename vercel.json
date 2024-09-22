@@ -1,9 +1,7 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "dist/main.js",
-      "use": "@vercel/node"
-    }
-  ]
+  "build": {
+    "env": {
+      "DATABASE_URL": "file:./dev.db"
+    }
+  }
 }
